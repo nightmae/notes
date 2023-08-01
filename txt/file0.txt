@@ -1,0 +1,154 @@
+^ is upper bound, < is lower bound
+                {equation1}
+                Curvature on p-Riemann Manifold can be divided into:
+                The riemann curvature tensor (R^a bys)
+                Ricci curvature tensor (R<uv),
+                and the Ricci scalar tensor (R^a <a).
+                
+                Holonomy measures flatness, If there is Holonomy the surface is curved, if not the opposite.
+                
+                The Riemann curvature tensor is a function that takes in 3 inputs, for example R(V,W)T, Those are V,W and T vectors. 
+                Its output vector measures how much T has changed after a pararell transport.
+                
+                \[R(V,W)T = ∇<v ∇<w * T - ∇<w ∇<v T - ∇<[v,w] T\]
+                If R(V,W)T = 0, there is no curvature.
+                if its not 0, then the opposite.
+                [[R(eu, ev)eσ = R^p σuv ep ]]
+                
+                R(eu, ev)eσ = ∇<eu ∇<ev eσ - ∇<ev ∇<eu eσ - ∇<[eu,ev]eσ 
+                
+                R^p <σuv ep = (∂u(Γ^p <vσ) -∂v(Γ^p <uv) + Γ^a <vsigma Γ^p <ua - Γ^b ua Γ^p vb) ep
+                
+                ∇vV = 0->
+                (-> means it is a vector)
+                
+                ∇T∇<vV = 0->
+                ∇v∇v∇T = -R(T,V)V->
+                
+                On curved manifolds, geodescis can naturally come together or spread apart.
+                Now we move onto the Ricci Tensor,
+                # [[R(a,b) = (Σ<p) R^p <apb]]
+                
+                The Ricci tensor is symmetric, so if you take R(a,b) it is equal to R(b,a). 
+                It is a summation of the Riemann curvature tensor
+                
+                Ric(V,W) => Scalar
+                Ric(V,V) = v^a v^b R<ab
+                
+                # [[[∇v∇v (volumen) = Ric(V,V) * volumen ]]]
+                # A converging geodesic:
+                -object shrinks
+                -Ric(V,V) > 0
+                # A diverging geodesic:
+                -object increases in size
+                -Ric(V,V) < 0
+                # if None:
+                -area and volume stay the same
+                - RVV = 0
+                
+                Since The ricci tensor is a summation of the riemann curvature tensor, if R<ab = 0, it does not mean spacetime is flat. 
+                (As shown in the previous examples, it means a and v dont change due to curvature)
+                
+                # -R = g^ub * R<ab = Σ(infinity) R^a <a
+                
+                Lets take a flat circle, you remember this from 8th grade mathematics:
+                c = 2PI r
+                A = PIr^2
+                A curved circle would have the same c, but a different area.
+                
+                Lets take R>0 in Flat spacetime and Curved Spacetime:
+                If it has the same circumference, in flat spacetime it has less area, but in curv. it has more area.
+                If it has the same radius, it has more area in flat s., but less A
+
+                in Curved spacetime.
+                If # R=0, it's the same everywhere.
+
+                #R^t <xtx = ∂~t(x/D^2) - ∂~X (1/X) + 0 -(1/x)(1/x~)
+                ~ after a symbol means we are using it in the rindler coordinates and not the standard coordinate system.
+
+                We are now moving onto Newton Cartan theory, which is newtonian gravity for general relativity.
+                **Remember the following!!**
+                p = rho, too lazy to copy it from google everytime, remember that.
+                # R<00 = 4πGp
+
+                # ∇^2 * φ = R<00
+                ∇^2 φ <-- This is called a ***Laplacian***
+
+                [if ∇^2 > 0, vectors are leaving the box
+                if ∇^2 = 0, no vectors are entering or leaving, 
+                and if ∇^2 < 0, vectors are entering the box.]
+
+                You remember that g-> is equal to G(M/r^2)(er->) from 7th grade physics class,
+                # ∇g-> is equal to the Ricci tensor of lower bounds 00 (4<00)
+
+                **we are now moving onto the  Gravitational potential scalar, fi (φ) **
+                ∇(-∇φ) = R<00, or 4piGp
+                thus
+                # (∇)(∇φ) = R<00
+
+                mass density p is always greater than or equal to 0, thus the laplacian is always greater than or equal to 0.
+
+                ok so you know how, 
+                ma-> = Fg->
+                ma-> = mg->
+                a-> = g->
+
+                i didnt write notes on this, but i am pretty sure it means gravity is affected by acceleration or something
+
+                the second derivative of x over t (d^2 x / dt^2) is equal to the Laplacian
+                if we change it to d^2 x^i (i being the coordinates x,y and z) / dt we get
+                = - ∂φ/∂x^i = 0 (we did a rather long derivation for this, i dont feel like writing it out jus trust me)
+
+                if we make λ = t, and σ = 0 => the connection coefficient with upper bound σ, <uv is equal to 0.
+                # Γ^ i < 00 = ∂φ/∂x^i => 0
+                Lower index sigma must be 0, upper p must be i.
+
+                # R^i <0uv = [∂u (Γ^i <v0) - ∂v (Γ^i <u0)], the other terms we would get from the formula go to 0.
+
+                if we take that
+                a) u = 0, we get
+                R^i <000 = 0
+
+                b) u = j, v = 0, 
+                # R^i <0j0 = ∂i∂jφ 
+
+                c) u = j, v = k ,
+                R^i <ojk = 0
+
+                # Spherical potential for a star:
+                # φ = -(GM/r), r=sqrt(x^2 + y^2 + z^2)
+
+                #∂i∂jφ = (GM/r^5) (r^2 δ^ij - 3x^i x^j)
+
+                ∇v∇vT = ∇<T
+
+                ∇<T = R(T,V)V->
+                v = e0->  ==> Geodesic in time direction
+                T = ej-> ==> Seperation in space
+                
+                ∇eo∇eo ej-> = -R^i <0j0 ei->
+                ===>  -)∂i∂jφ)
+                
+                j = x : ∇eo∇eo ej-> == +2ex (Spreading)
+                j = y=z : ∇eo∇eo ej-> == -1ez/y (Coming together)
+                
+                Riemann Curvature tensor in newtonian gravity:
+                R^i <0j0 = **-R^i 00j = [[∂i∂jφ]]
+                φij = [[∂i∂jφ]] ====> Tidal Tensor
+                Summation of the Ricci Curvature tensor:
+                R>ab = Σ(u) R^u <aub
+                
+                R<00 = R^u <0u0 =
+                => d^2φ/dx^2 + d^2φ/dy^2 + d^2φ/dz^2 >, or equal to 0
+                
+                R<00 = R<tt = 4πGp (Laplacian)
+                
+                mass density creates a potential "well" (laplacian)
+                the "well" causes time-pointing geodescics to converge Rtt (Shrink volume)
+                
+                inside earth: p>equal 0
+                outside: p = 0
+                R<00 approx = 0
+                
+                R<uv can NOT detect changes in shape, only volume.
+                IT can NOT see tidal forces acting on objects in geodesics being pararell transported.

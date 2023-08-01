@@ -1,0 +1,232 @@
+You may have heard somewhere that
+"The universe started with the big bang, and is rapidly expanding outwards"
+Well, Comsology is basically the origins and evolution of the universe.
+
+We will take about:
+The big bang, expansion of the universe, cosmological constant, and discuss dark energy for a bit.
+
+You may know that einstein published his theory of general relativity sometime around ~1917, and in his Einstein field equations, he uses the Comsological constant (which was pressumed to be equal to 0 in his time) to balance out the equation, even tho it will not change the outcome.
+
+A summary would be:
+Einstein is concerned about the idea of an infinite universe full of matter. This case causes problems in General relativity and Newtonian gravity. He is also concerned with making the universe static (flat)
+So Einstein's solution was to add the Cosmological constant, Λ to his equations.
+
+Refer to Poisson's equations,
+Where we have ∇²Φ = 4πGp
+Where Φ is the Gravitational potential, and p is the mass density rho.
+(Φ = 0, at infinity)
+
+Uniform mass density rho would mean an infinite universe.
+If we zoom out, from Earth all the way to the ~100Mly large galaxy filaments which make up our universe, the universe is ~approximately uniformly dense.
+Φ Is Constant, meaning ∇²Φ Go to 0, so we get that:
+Mass density rho = 0, Which is known as "Seeliger's Paradox"
+
+So we have to add -λΦ to the equation to balance it out:
+ ∇²Φ - λΦ =4πGp
+=> 0 -λΦ =4πGp
+Φ = -(4πG/λ)p -= 0 (NotEqual -=)
+When we transition from Newtonian gravity, Poissons equation turns into the Einstein field equations, so we get:
+G_uv = (4πG/c^4) T_uv
+
+This proposes a curved spacetime.
+
+"Wouldn't this mean that g_uv is flat at infinity?"
+Well Einstein had some objections to this,
+"For the inertia of material point of mass m (in natural measure) depends upon the g_uv"
+"Statistical objections must be raised"
+nightmae — 24/07/2023 18:10
+I don't really understand his objections, so
+Keep in mind that g_uv is static overtime, this would make 
+=> g_uv = flat everywhere always? aswell as
+=> G_uv = 0
+
+This would mean that
+T_00 = pc^2 = 0
+
+We could get an Infinite (NEGATIVE) flat universe, or a Finite (POSITIVE) curved universe.
+
+This is why we add the Cosmological constant Λ to the Einstein field equations 
+The term Λ is required for a static universe with positive curvature.
+Λ = (4πG/λ)p
+=> 1/R^2
+R being the Radius of the universe.
+
+For a spherical universe, spacetime is k>0.
+By definition,
+∇μ G_uv = 0,
+∇μ g_uv = 0 (Metric compatibility property),
+∇μ T_uv = 0 (Conversation of Energy-Momentum)
+
+If we assume that Λ << 1,
+Most GR Applicants use Λ ~ 0
+Such as:
+-Massive body orbits, and
+-Gravitational waves
+
+But in Cosmology, Λ ≠ 0.
+
+The theory lines up with general relativity just fine:
+"At any rate, this view is logically consistent, and from the standpoint of the general theory of relativity"
+
+Einstein admits he isn't considering if this theory lines up with the latest astronomical knowledge:
+"From the standpoint of present astronomical knowledge, it is tenable, will not be discussed here "
+
+Introduce a new term, -Λg_uv needed to model a static universe:
+"That term is only necessary for making a possible quasi-static distribution of matter."
+
+in 1922, Alexander Friedmann published his 2 equations:
+We will take a modern overview at his equations.
+
+Friedmann Eqn. Assumptions:
+-At VERY large scales, the universe is same at all spatial points.
+-Universe has uniform mass density p
+-Universe has uniform pressure p
+-Universe can have a time-varying scale factor, a(t)
+
+The Metric Tensor g_uv basically consits of +1, and a(t)^2 g_ij
+
+All spatial points in the universe are on equal footing at large scales.
+-But there was no evidence to suggest that the universe was the same over large scales of Time
+Image
+Image
+nightmae — 24/07/2023 18:25
+So we can get the equation:
+((a.)^2 + kc^2) / (a^2) ===
+=> (8πGp + Λc^2)  / 3
+This is the equation for the expansion rate (a.) .
+
+For the expansion acceleration rate (a..) we have:
+(a..)/a = -(4πG)/3 * (p + 3p/c^2) + (Λc^2)/3
+So his equations suggest that the universe is expanding at a rate a(t).
+You can think of the universe as as balloon getting filled with He, or something like that.
+
+So it suggest that Expansion Rate a. > 0 for the first half of the universe's lifespan, and
+Acceleration a.. < 0 for the second half.
+
+Friedmann equations, static solution: a.. = a. = 0
+So we get that:
+
+Λ = (4πG)/c^2 * (p + 3p/c^2), and
+k/a^2 = (4πG)/c^2  (p + p/c^2)
+There is an actual astronomical evidence for the theory of an expanding universe, 
+It's the Redshift of Galaxies moving away from Earth
+
+SL.35
+Image
+Image
+nightmae — Yesterday at 16:00
+Why would we expect galaxies to have a particular colour?
+This is probably due to Atomic Spectroscroy and the Planck Relation (E=hf)
+If we observe a hydrogen atom, it's spectral lines are specifically at 410, 434, 486, and 656 nm.
+This is an image of the spectral lines highlighted for some elements.
+
+Spectral Lines act as a "fingerprint" for a given element, basically.
+So you could see how this relates to the Planck Relation.
+The Spectral Lines are the wavelengths the element emits, and it absorbs the other wavelengths.
+
+So if you had white light (full spectrum) pass through, for example a hydrogen gas cloud, we would get the hydrogen absorption spectrum as an output.
+
+The sun also has an absorption spectrum, it's called "The Fraunhofer Lines"
+So, Light from galaxies/stars will be missing specific frequencies due to absorption by elements present in atmosphere/gasses.
+
+The Standard hydrogen absorption spectrum can be Blue-shifted to the "Left", or Red-shifted to the "right".
+
+Vesto Slifur was the first person to observe that light from distant galaxies was redshifted.
+In 1927, Georges Lemaitre built on Einstein's paper, and observation of galaxy redshift, aswell as:
+-Proposed the universe was expanding,
+-Universe had constant positive curvature,
+-Universe's radius would increase without bound overtime.
+
+There is no "center of the universe" because all spatial points are homogeneous and isotropic.
+Meaning all spatial points are equivalent.
+
+"A homogeneous universe of constant mass and increasing radius accounting for the radial velocity of extra-galactic nebulae"
+-Universe can have positive curvature: sqrt(λ) = 2π^2/kM = 1/R_0 
+-Proposed the universe was expanding: "The radius of the universe increases without limit from an asymptotic value R_0 = -infty"
+-Radial velocity v proportional to radius from Earth r: R_0 = rc/v*sqrt(3)
+Image
+nightmae — Yesterday at 16:29
+"In the distant past, the universe expanded from a single point"
+Called the "Primeval Atom"
+This is the same idea as the "Big Bang Theory"
+
+In 1929, Edwin Hubble:
+-Studied redshift of distant galaxies,
+-Proposed a linear relationship between galaxies
+--Radius from Earth r
+--And radial velocity v
+
+v = Hr
+This is the Hubble-Lemaitre Law
+Where H is the Hubble Parametre H(t)
+So we get that:
+v/r = H = a./a
+His original present-time estimate was:
+H(t) ~ 500km/s per Mega-Parsec
+
+The Current present-time estimate is:
+H ~ 70km/s per Mega-Parsec
+
+(For reference, one MPc is 3.26 Mly)
+
+Einstein, after learning of Hubble's work, abandonded the cosmological constant.
+Λ = 0
+It was reported that Einstein has stated that the cosmological constant was "his biggest failure".
+
+Cosmic Microwave Background Radiation:
+-It is the low-energy electro-magnetic radiation field left over from the early universe,
+-Exists everywhere in space, and it
+-Travels in all directions
+
+in 1948, Ralph Alpher (supervisor of Robert Herman) published a paper on the formation of heavy elements in the early universe.
+
+The early universe was a matter-dominated universe.
+Then Heavier atoms started to be made by a process called "neutron capture" early on.
+Then the universe became radiation-dominated, which stopped atoms from forming early on.
+
+For cosmological redshift, as you know blue-light is a higher energy,
+and red-light is weaker, meaning the universe is cooling overtime, as bluelight turns into redlight.
+
+After the universe's radiation has cooled, it went into a phase known as "Recombination"
+~370,000 years after the Big Bang, this was when the radiation cooled and allowed atoms to form.
+
+IF The Big Bang Theory is correct, 
+-Early-universe radiation should still be around today,
+-Will have a much larger wavelength/lower frequency due to the expansion of the universe,
+-CMB Radiation is NOT predicted for an eternal, steady-state universe.
+Image
+nightmae — Yesterday at 16:39
+In 1964, CMB was detected for the first time,
+-It was detected by the Holmdel Horn Antenna
+-When aimed at empty space, it detected a near-uniform noise signal,
+-Frequency distribution matched a black body ~2.725K
+
+If we take the surface of the earth, with a motion ~368km/s relative to CMB,
+and add +3.36mK blueshift, aswell as -3.36mK redshift,
+And then subtract dipole, and radiation from stars
+And also take 2.72548 +- 0.00057K 
+
+We get what an image of the CMB Radiation.
+The CMB Radiation is a STRONG evidence for the Big Bang Theory.
+in the 1970's The Big Bang Theory reaches a widespread acceptance as the main theory of cosmology.
+
+Discovery that Λ may not be 0:
+-Not longer after Edwin Hubble's publication on galaxy redshift (1929)
+--It was generally assumed that Λ=0
+-In the 1990's, evidence was collected that shows the univere's expansion is accelerating..
+--The simplest explanation for this is that Λ>0.
+
+In 1998, Two independent groups observed supernova's from galaxies at different distances from Earth.
+They both observed type 1a supernova's,
+And they discovered that Light from farther away is light from earlier in the universe's history.
+Conclusion: Speeds of various galaxies traveling away from the Milky Way is increasing overtime
+
+This means that universe expansion is accelerating: (ȧ) > 0.
+
+The cosmological constant would also explain a "Dark Energy" which we are not going to get into right now.
+That is if we take the Trace-Reversed form of the Einstein field equations, we get a form of "Dark Energy"
+A possible explanation for the universe's accelerating expansion is this Dark Energy.
+
+The Simplest explanation is the cosmological constant Λ, but there is also
+Quintessence, which is a Time-Varying Scalar Field.
+The next notes will consist of the derivation for the FLRW Metric, aswell as The Derivation for the Friedmann Equations.S

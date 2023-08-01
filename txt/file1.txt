@@ -1,0 +1,127 @@
+        we can recall that 
+        ==> ∇^2φ = 4πGp
+
+        The number flux four-vector (denoted by N->) is equal to the matrix of N^t, ^x, ^y and ^z. (Image at the bottom showing what it looks like)
+
+        Num density Nt:
+        Pick a constant t, and count the number of objects in a unit length of Δx or Δt.
+
+        2D num density:
+        Number of ojects in unit square ΔxΔy at constant time t
+        ex:
+        ==> Nt = (#obj) / (ΔxΔy)
+
+        num of objects in unit length Δy in unit time Δt at constant time x also applies
+        ==> Nx = (#obj) / (ΔtΔy)
+
+        3D Num density:
+        ==> Nt = (#) / (ΔtΔyΔz), Nx = (#) / (ΔtΔyΔz), Ny/z = (#) / (ΔtΔxΔy/z) 
+
+        Important terms:
+        Flux = Current density
+        ==> # of wordlines that ross a unit box in a spacetime diagram
+
+        The 4D Divergence of N is 0.
+        (if any amount of wordlines enter the unit box at a certain time, 5 must leave aswell)
+
+        ∇N^i = 0
+        (if you can recall i = x,y,z)
+
+        if ∇N^i > 0, (∂Nt/∂t) < 0, density decreases overtime
+        the opposite also applies
+
+        Nt = n
+        Ni =  Ui * n
+        (second image shows the matrix in galilean relativity of the N four-vector multiplied by n)
+
+        We have discussed length contraction in special relativity, so as you know
+        a rest frame of n is equal to (#vec) / (ΔxΔyΔz) = n
+        but a moving frame would be 1/2 of ΔxΔyΔz, this is because of length contraction at high velocities due to the lorentz transformation.
+
+        The 3rd image showcases the N four-vector in matrix notation in special relativity.
+
+        You may remember that P = yU from special relativity, y being lowercase gamma.
+        The 4th image shows N = n U
+        ==> ny(ctet + uxex + uyey + uzez)
+
+        Particle rest number density n is the same in all reference frames.
+        **Num flux is the amount of particles in a spacetime box of size 1 *
+
+        Now we are moving to the Energy momentum tensor, denoted by T^ab**
+        The Energy Momentum tensor is the total four-momentum (P) in a spacetime box of size 1.
+        T^ab = Flux of a-momentum going through a unit box of constant B (will change)
+        T^tt = total time momentum
+        T^xt = total x-momentum
+        
+        1D Momentum flux box of size 1, at a constant time x:
+        T^xt = total time momentum
+        T^xx = total x-momentum crossing a defined boundry of const x
+        
+        The Energy-Momentuym tensor is symmetric, so if we have
+        ==> T^ab, its equal to T^ba
+        
+        T^ab ===> Amount of a-momentum going through a 3D unit volume of a constant b.
+        const ct => T^at
+        const x => T^ax
+        
+        (Pt) / (dxdydz) = T^tt
+        (Px) / (ΔxΔyΔz) = T^xt, T^yt, Tzy, ...
+        [Pt/x/y/z] / (ΔxΔyΔz) = T^tx/xx/yx/zx, you get the convention by now
+        
+        The first image shows the expanded form of the Energy-Momentum tensor in 4D.
+        The Blue part is Energy Density,
+        The Red Part is Momentum Density
+        Top Magenta Part is Energy Flux
+        The Diagonal Purple Part is Pressure 
+        **The Entire Region encased in the Green Part is Momentum Flux
+        The Green Region is Shear Stress
+        
+        Image illustrated diagram of uhh something, vectors with a constant B going through the 3d unit box, the vectors are a-momentum. I am too bad at drawing to visualize it so like just imagine it
+        
+        The En-P Tensor is a MACHINE that takes in 2 unit vector inputs, and outputs a momentum density.
+        [T(V,W) => momentum in the V direction INSIDE unit 3D spacetime box PERPENDICULAR TO The W vector.]
+        
+        [T^ab = T(ea, eb)]
+        if the tensor uses uv (greek letters mu and nu) in its lower or upper bounds, it means that it uses ct,x,y,z
+        if it uses latin letters ij it only uses x,y,z
+        
+        ∇T^ij > 0, ∂Pe/∂ct < 0 (decreasing)--
+        ∇T^ij < 0, ∂Pe/∂ct > 0 (increasing)++
+        
+        if we have ΔxΔyΔz
+        => ∇xT^xi < 0, (∂T^xt)/(∂et) > 0|
+        ==> ∂vT^tv = 0
+        ===> ∂vT^{x/y/z}v = 0
+        
+        ∂vT^uv = 0,
+        => ∇T = 0
+        
+        ∇v T^uv = T^uv;v = 0
+        In large regions of spacetime [[There is NO law of conservation of energy and mass density.]]
+        Blue light with higher energy will eventually turn into red light with a lower energy, as
+        Photons wavelength expand with space
+        
+        Energy is lost in curved spaces.
+        T^at = PNt = 2x4 matrix consisting of Pt Nt... Pz Nt
+        Each particle has four-momentum, and mass density, which are described by number flux N
+        the 2x4 matrix we talked about earlier is equal to the total four-momentum in ΔxΔyΔz.
+        
+        The flux of four-momentum in the b-direction
+        T^ab = PNb = Pt Nb... Pz Nb
+        
+        If we take the energy-momentum tensor of dust which is the outer product of four-momentum P and number flux N
+        Tdust = P⊗N
+        
+        [ T^uv <d = P^u N^N ]
+        This is a Rank-2 tensor,
+        => T^uv * Λ^p <u Λ^σ <v = T^pσ
+        
+        as you remember, four-momentum P = mU, mass times the U four-vector, and N = nU.
+        p = m*mU
+        Pc^2 is rest energy density
+        
+        We will not derive this too much, but,
+        Perfect fliud = exerting pressure equally accross x,y,z
+        you can imagine it as a 4x4 matrix with P going down diagonally.
+        
+        T_(perfectFluid) = (p + P/c^2)U⊗U = pg(metric +--- (mostly negative metric))

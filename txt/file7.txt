@@ -1,0 +1,62 @@
+        In this lecture we're going to give an introduction to the idea of gravitational waves, and the wave equation.
+        In future thingy's we will derive linearzed gravity and the transverse traceless gauge
+        
+        We will discuss how the einstein field equations naturally lead to the equation for gravitationa waves which travel at the speed of light c
+        
+        We will review waves first, informally, a wave is a distrubance that propogates in a medium, it can travel accross a string or a body of water.
+        A gravitational wave is a disturbance in the spacetime metric that propagates through spacetime, making spacetime strecth and compress.
+        
+        wobble == acceleration
+        => ∂^2 A / dx^2
+        where A is amplitude
+        
+        Gravitational waves are caused by a wobble in mass-energy/momentum
+        The Sun-Earth system produces gravitational waves, but they are undetectable, and extremely extremely weak
+        Binary compact systems such as white-dwarf systems and black hole systems also produce gravitational waves
+        
+        Gravitational radiation leads to energy loss in these systems
+        The strength of these waves does get weaker over time, a relatively weak change can be detected by the LIGO detector or other detectors.
+        
+        These detectors basically work by using an interferometer (device that measures interference between light beams), and a light source which shoots light beams into a beam splitter, which separates the waves into 2 different mirrors which come back and hit the detector, something like that.
+        
+        The wave equation is
+        v^2 ∂^2 (A) / ∂x^2 = ∂^2A/∂t^2
+        A(t,x) = wave amplitude
+        v = wave velocity
+        
+        A(t,x) = A_0 cos(wt |kx x|)
+        w is the angular frequency
+        kx is the angular wave number
+        if we use -, we get a positive x direction, and + is a negative x direction 
+        
+        I don't feel like writing down all the derivation, but we get that
+        v = w/k_x
+        after some derivationm, which was pretty long
+        The first image is a x-wave with a constant t, more sharply curved means higher ∂^2A/∂x^2
+        The second image shows a t-wave with a constant x, less curved means lower ∂^2A/∂t^2
+        
+        Keep in mind that v^2 is pretty small
+        
+        The wave equations in 3D:
+        v^2 (∂^2 A / ∂x^2) = (∂^2 A / ∂t^2)
+        => ∂^2A/∂x^2 = 1/v^2 (∂^2 A / ∂t^2)
+        
+        ∂^2 A / ∂(x)^2 + # ∂^2 A / ∂(y)^2 + # ∂^2 A / ∂(z)^2  = ∇*∇(A)
+        ∇∇(A) = 1/v^2 (∂^2 A / ∂t^2)
+        => ∇^2(A) = 1/v^2 (∂^2 A / ∂t^2)
+        
+        Now we'll talk about maxwell's equations in a vacuum for a bit:
+        ∇ E = ρ/ε_0 (-> goes to zero)
+        ∇ x E = -(∂B/∂t)
+        ∇ * B = 0
+        ∇ x B = u_0J (also goes to 0) + u_0e_0 (∂E/∂t)
+        i don't feel like discussing electromagnetic wave equation, as it is insane,
+        but the d'Alemebrt operator is basically
+        =>  (∂<u ∂^u)E = 0
+        =>  □E = 0
+         □ ≡ ∂<u ∂^u ≡ n<uv (∂<u ∂^u)
+        n<uv in this case is the inverse minkowski metric
+        
+        The d'alembertian operator is pretty similar to the laplacian operator, here's an example:
+        Δ ≡ ∇^2 ≡ ∂^2 A / ∂(x)^2 + # ∂^2 A / ∂(y)^2 + # ∂^2 A / ∂(z)^2
+        □ ≡ ∂^2 A / ∂(ct)^2  + ∂^2 A / ∂(x)^2 + # ∂^2 A / ∂(y)^2 + # ∂^2 A / ∂(z)^2

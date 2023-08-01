@@ -1,0 +1,137 @@
+        TTG
+        We have derived the Lorenz Gauge in the previous notes, now we will get the transeverse traceless gauge.
+        Polarization is the geometric orientation of waves
+        The Polarization of the electric field vector E in an electroamgnetic field can be horizontal or vertical,
+        It can also be circular or diagonal.
+        
+        Electromagnetic waves are osciliations in the E and B vector fields.
+        Polarization = direction of E vector
+        This means that Gravitational Waves are oscilations in the metric pertrubation h_uv
+        So in this case, 
+        Polarization = Direction of how distances change between points.
+        
+        
+        The Linear Metric h_uv has 16 components.
+        There is a choice of coordinates where this reduces to only 2.
+        These are the 2 polarizations of gravitational waves:
+        "plus" (+) polarization, and
+        "cross" (x) polarization
+        
+        This coordinate system is called the Transverse Tracless Gauge "TT"
+        The most simple solutions to the d'Alembertain of h_uv are plane waves.
+        Auv Are the Amplitudes (It is also Symmetric),
+        kσ are the components of the Wave Co-vector,
+        k_x/y/z are the angular wavenumbers,
+        k_t = ω/c is the Angular frequency.
+        
+        Since the wave equation is linear,
+        ◻(a1f1 + a2f2) = a1◻f1 + a2◻f2
+        Any generic wave number can be written as a linear combination of plane waves of different frequencies
+        The planes will have a constant spacing factor which will space them apart.
+        
+        The most straightforward solution to ◻ℏ_uv is:
+        A cos (+(ω/c) ct - k^x x- k^y y - k^z z) =
+        A cos (n_tt k^t ct + n_xx k^x x ...) =
+        A cos (nuσ k^u x^σ) = 
+        A cos (kσ x^σ) = 
+        = Re[A e^{i(k_σ)x^σ}]
+        k = k^u eu
+        k^u are vector components
+        
+        k = k_σ ε^σ
+        where k_σ are the co-vector components
+        
+        k^x/y/z are the angular wave-numbers
+        A cos (...) = Re[A * e^i(n_uσ k^u x^σ)]
+        
+        The density in x = κ_x = 1/2pi k_x
+        κ_x is the linear wavenumber
+        k_x is the angular wavenumber
+        
+        So the density in ct = f/c = 1/2pi w/c
+        So we get that:
+        k = k^t ε^t + k_x ε^x
+        => space x -> k = k^t et + k^x ex
+        In flat spacetime/cartesian coordinates, 
+        k_u = n_uv k^v
+        
+        k_t = +k^t
+        k_x = -k^x 
+        k_y = -k^y 
+        k_z = -k^z
+        
+        More Generically,
+        k_u = g_uv k^v
+        As we know, the most straightforward sol. to ◻ℏ^uv are plane waves.
+        ℏ_uv == A_uv cos(+ω/c ct - k^x x - k^y y - k^z z)
+        ℏ_uv == Re[A_uv e^i(k_o x^σ)]
+        ℏ_uv is Symmetric, so A_uv is also symmetric.
+        
+        If we take the derivative of a plane wave,
+        ∂a(ℏ_uv) we get:
+        ℏ_uv ik_a ∂a
+        Wave co-vector must be a null/light-like geodesic where mag(k)^2 = 0, Since the wave travels at v=c.
+        The Lorenz Condition, 0 = ∂b h^ab = ik_b A_ab e^ikσ x^σ 
+        Also gives
+        A^ab k_b = A_ab k^b = 0
+        The columns of the wave amplitude "matrix" A^ab must also be orthogonal to the wave co-vector row k_b 
+        
+        => k_a k^a = mag(k)^2 = 0
+        
+        A_uv has 16 components,
+        The Symmetry A_uv = A_vu reduces this to 10 unique components,
+        Lorenz Gauge ∂b h^ab = 0 is not unique because:
+        x^a = X^a --> X^a + ξ^a with ∂b h^ab =  ◻ξ^a
+        
+        A special LG called the "Transeverse Traceless Gauge" "TT" redices this from a further 6 components to 2.
+        k_B A^ab = 0 gives 4 constraint equations aswell.
+        
+        We know that the Lorensz Gauge has coordinates x, a small displacement field xi, and a transformation rule.
+        In the "TT" Gauge, "plus" and "cross" polarizations become VERY obvious.
+        ◻X]^a = 0 gives us 4 degrees of freedom for X]^t/x/y/z
+        
+        As you know, we also have 4 degrees of freedom on A_uv, aswell as h_uv.
+        3 of them will be "transverse", and 1 of them will be "traceless"
+        
+        
+        We will know discuss the transverse constraints:
+        -Take an observer with 4-velocity U = U^u eu who is experiencing gravitational waves
+        -We want the gravitational waves to be at right angles (orthognal) to the observer.
+        So, Auv U^u = 0
+        Making the matrix A_uv dotted with the matrix U^u = a 1x4 matrix with all the components being 0.
+        
+        k^u Auv = 0, and Auv U^u = 0 have 1 shared constraint, with a total of 7 constraints.
+        This makes
+        Aut = 0 = Atu
+        k^t Atv = 0 is already satisfied since Atv = 0
+        So k^u Auv = 0 only gives us an extra thjree constraints.
+        So, Auv U^u = 0 gives us 3 "transeverse" constraints, and we also have 1 extra "tracless" constraint.
+        
+        The Tracless constraint is:
+        0 = Auv n^uv = Att - Axx - Ayy - Azz
+        
+        So, The "TT" Gauge is a special Lorenz Gauge where:
+        ℏ_uv U^u = 0 = ℏ_u ^u
+        U^u being the 4 velocity of the person observing the gravitational waves.
+        
+        A 4th constraint is for Auv to be "Traceless": A_u ^u = n^uv A_uv = 0
+        This leaves us with 2 independant components.
+        
+        Take U = c et, so
+        U^u = (c,0,0,0)
+        Take k_B = (ω/c, 0, 0, ω/c)
+        
+        
+        Avu U^u = 0 gives us
+        Atv U^t = Atv c = 0
+        => Atv = Avt = 0
+        Auv k^u = 0 gives us
+        Atv k^t + Azv k^z = 0
+        0(+ω/c) + Azv(-ω/c) = 0
+        => Azv - Avz = 0
+        A^u _u = n^uv A_uv = 0 gives us
+        => Axx = -Ayy
+        And Axy = Ayx by symmetric.
+        
+        So these 2 independant components in the matrix give us cross and plus polarization, image above.
+        k^u is travelling in the z-direction.

@@ -1,0 +1,128 @@
+        Gravitational wave derivation
+        We derived the einstein field equations in the previous note thingy
+        We can do a change of coorinate systems that sets all terms to 0 except the d'Alembertain of h
+        
+        This basically shows that a metric obeys a wave equation in the vacuum where Tuv = 0
+        At the end, ill explain what a gauge is.
+        
+        
+        Guv = 1/2 (∂^a ∂u ℏav + ∂^a ∂v ℏua - nuv ∂^a ∂^b ℏab - ∂^a ∂a ℏuv)
+        if ∂bℏ^ab is 0, then the first 3 terms are 0
+        I wont show the derivation, but the first 3 terms do go to 0.
+        
+        This is the Lorenz Gauge, it's the first three terms in the einstein tensor going to 0.
+        "how do we find a coordinate system for ∂bℏ^ab = 0?"
+        For this we need a coordinate transformation, 
+        We will start by getting a displacement field xi~, which is basically a vector displacement field.
+        
+        it is not some insane displacement like
+        ~x^a = x^a + ξ^a
+        it is a very small displacement, like
+        mag(ξ) << 1
+        
+        That's why we will also assume it's derivatives are small
+        mag(dξ^a/dx^b) << 1
+        
+        to get x^a --> ~x^a
+        we use x^a = ~x^a - ξ^a
+        And then we get:
+        ∂~x^a/∂x^b = ∂x^a/∂x^b + ∂ξ^a/∂x^b = δ^a <b +  ∂ξ^a/∂x^b 
+        ∂x^a/∂~x^b = ∂~x^a/∂~x^b - ∂ξ^a/∂~x^b = δ^a <b - ∂ξ^a/∂x^b ∂x^σ/∂x^b
+        
+        After long derivation, we get that
+        ∂x^a/∂~x^b = δ^a <b - ∂ξ^a/∂x^b
+        Where the derivative's of xi are very small, so we can approximate them to basically 0.
+        
+        Metric change of coordinates:
+        ~g_ab = ea * eb = ∂/∂~x^a * (∂/∂~x^b) = ∂x^u/∂x^a * ∂/∂x^u ** ∂x^v/∂~x^a * ∂/∂x^v
+        ... some long derivation
+        ~g_ab = (δ^u <a -  ∂ξ^u/∂x^a)(δ^v <a -  ∂ξ^v/∂x^b)(nuv + huv)
+        After an even longer derivation, we get that:
+        ~g_ab = g_ab - ξa,b - ξb,a
+        So by this logic, we also get that:
+        h_ab = h_ab -  ξa,b - ξb,a 
+        
+        We can expand this term, to calculate the Riemannian curvature tensor
+        ~R^p σuv = 1/2 n^pa (∂u∂σ ~h_av - ∂u∂a ~h_vσ - ∂v∂σ h_au + ∂v∂a h_uσ)
+        We can expand the terms, but im not going to do that
+        
+        So we get this as a final result:
+        ~R^p σuv = 1/2 n^pa (∂u∂σ h_av - ∂u∂a h_vσ - ∂v∂σ ~h_au + ∂v∂a ~h_uσ) = R^p σuv
+        
+        ∂ξ^a / ∂~x^u = ∂ξ^a/∂x^v * ∂x^v/∂~x^u = ∂ξ^a/∂x^v δ^v _u - ∂ξ^a/∂x^v ∂ξ^a/∂x^u = 
+        = ∂ξ^a/∂x^u
+        This means that Riemannian tensor components don't change if we add a small displacement field xi
+        Our primary goal now is to change to the Lorenz Gauge
+        
+        We will introduce new notation, as ~-h is maybe too hard to read, well say it is equal to ~ℏ
+        ~h_uv = h_uv - ξu,v - ξu,v
+        ~ℏ_uv = h_uv - ξu,v - ξu,v + n^uv ξ^σ ,<σ 
+        
+        ~ℏ^ab = ℏ^ab - n^ua n^vb ξu,v  - n^ua n^vb ξv,u + n^ab ξ^σ ,<σ
+        ~ℏ^ab, <b = ℏ^ab, <b - n^vb ∂v∂b ξ^a
+        So we get that:
+        ∂b ~ℏ^ab == ℏ^ab - ◻ξ^a == 0 
+        Choose ξ^a such that ℏ^ab = ◻ξ^a
+        ∂b ~ℏ^ab Is part of the Lorenz Gauge
+        
+        
+        The choice of ξ^a is not unique.
+        Any χ^a with ◻χ^a = 0 Will also solve:
+        ℏ^ab = ◻(ξ^a + χ^a) ===◻ξ^a +◻χ^a = ◻ξ^a
+        
+        The Lorenz Gauge is more of a class of coordinate systems, not just one coordinate system.
+        If ∂b ~ℏ^ab With Weak Gravity, the Lorenz Gauge, and Vacuum ~T_uv = 0, the first 3 terms go to 0.
+        So we get the following:
+        
+        #~G_uv = 8πG/c^4 * ~T_uv
+        ◻ℏ_uv = 0
+        => Wave Equation
+        
+        If we know that ~g_uv = n_uv + ~h_uv
+        and ~ℏ_uv = ~h_uv - 1/2 n_uv ℏ
+        We can get:
+        
+        1/c^2 (∂^2 ~ℏ_uv / ∂t^2) == ∇^2 ~ℏ_uv
+        By the way:
+        -Gravitational waves exist in all coordinate systems,
+        -Coordinate systems are made by humans,
+        -Coordinate choice has no impact on real physics, basically,
+        
+        
+        Now to cover the Lorenz Gauge in electricity n' magnetism, and how it relates to the L.G in G.R
+        
+        A Gauge Is basically the choice we have the freedom to make
+        So as you know, different potentials result in the same  electric field
+        (Same Physics)
+        E = -∇
+        E = -∇(Φ + k)
+        E = -∇ - 0
+        
+        E = -∇Φ
+        
+        B = ∇ x a
+        F_B = q(v x B)
+        Different Potentials result in the Same Magnetic Field
+        B = ∇ x a
+        B = ∇ x (a + ∇f)
+        => ∇ x a
+        
+        Combining the electric potential scalar fi, and the magnetic potential vector a, we get the
+        4-Potential vector A
+        We can also expand this into the 4-Potential co-vector, but i will not cover that.
+        
+        But basically,
+        A_i = -a^i
+        A_t = Φ/c
+        
+        E_x/c = -∂xA_t + ∂ctA_x
+        B_x/c -∂yA_z + ∂zA_y
+        Combining E_x/y/z, aswell as B_x/y/z, we get 
+        The Faraday Tesnor F_uv
+        Which we can display in matrix notation like this: 2nd image
+        
+        Different potentials result in the same Faraday Tensor (same physics)
+        F_uv = ∂uA_v - ∂v_Au
+        Freedom to pick A_u is called Gauge Freedom
+        Choosing a specific A_u is called a Gauge
+        Changing from one A_u in a way that F_uv doesn't change is called a Gauge Transformation

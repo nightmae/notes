@@ -1,0 +1,116 @@
+        We will use alternate coordinate systems to better portray the schwarzschild metric
+        We will take that the Schwarzschild Metric in Eddington-Finkelstein coordinates is the first image
+        
+        In the metric tensor in eddington finkelstein coordinates, the 2nd diagonal is replaced with a 0, and the numbers above and to the left of it are repalced with a 1.
+        This makes the coordinate system non-orthogonal, and also makes grr=>0, and er lightlike.
+        
+        We will now go into the derivation of the EF.C
+        
+        If we take λ=r,
+        dct/dr = |(1-rs/r)^-1|
+        and ct(r) = |r+rs log (r/rs - 1) + k|
+        In normal schwarzschild coordinates, when we take this equation into account, it appears that light-beams get stuck before crossing the event horizon, and thus never cross it, but in Eddington-Finkelstein coordinates, we see light-beams cross the event horizon.
+        
+        Inside the event horizon, we take r<rs
+        ct = -r -rs log (r/rs - 1) + k
+        ct~ = ct + rs log (rs/r - 1)
+        after some canceling out we get
+        ct~ = -r + k
+        ct -> v = ct + r + rs log (rs/r - 1)
+        we will take the underlined part to be equal to r, as we will have to write it a lot of times
+        v = k
+        In EF coordinates, v = ct~ + r
+        and r_in = r
+        
+        ∂/∂v = (∂ct/∂v ∂ct/∂ct) + (∂r/∂v * ∂/∂r)
+        ∂/∂rin = (∂ct/∂rin * ∂/∂ct) + (∂r/∂rin * ∂/∂r) 
+        v = ct + r^star 
+        rin = r
+        
+        the dot product of ∂/∂rin is equal to 0.
+        ∂/∂rin = (-1) (1/1-rs/r) ∂/∂ct + ∂/∂r
+        ∂/∂rin = (-1/ 1 - rs/r) ∂/∂ct + 1∂/∂r
+        This means that rin is light-like in the EF coordinates
+        
+        If we calculate the tangent vector with path parameter lambda, we get
+        |d/dλ|^2 = (1-rs/r) (dv/dλ)^2 - 2[(dv/dλ)(drin/dλ)]
+        which means that the tangent vector is non-orthogonal
+        
+        For outgoing lightbeams, we get that
+        ct = +r+rs log (1 - rs/r) + k
+        v - r - rs log (rs/r - 1) = ct
+        v = 2(r+rs log (rs/r - 1)) + k** for outgoing lightbeams
+        
+        The coordinates for ingoing lightbeams are 
+        (v, rin, θ, Φ)
+        
+        nightmae — 12/07/2023 12:11
+        ct => u = ct - r - rs log (rs/r - 1)
+        u = k
+        ct = u+r*
+        r = r_out (rout)
+        
+        if u = ct - r - rs log (r/rs - 1)
+        rout = r
+        then the metric begins with 1 - rs/r on the first diagonal, 0 on the 2nd diagonal, and +1 on the left and top of 0, the rest is the same as the normal schwarzschild metric.
+        
+        Ingoing: u=k
+        Outgoing: u = 2(-rs-rs log (r/rs - 1)) + k
+        
+        The Eddington Finkelstein coordinates do have some flaws tho, as they predict the existence of white holes, they also:
+        -Demistify the event horizon
+        -For ingoing light-beams, they stop working on the event horizon
+        -For Outgoing it's the opposite
+        -Prediction of White Holes
+        
+        That's why we will use the Kruskal-Szekeres Coordinates instead (KS for short)
+        we need to take vin and vout
+        so v + u / 2 = ct
+        and  v - u / 2 = r^star
+        ∂/∂v * ∂/∂v = 0
+        ∂/∂u * ∂/∂u = 0
+        
+        ∂/∂u * ∂/∂v = 1/2 (1 - rs/r)
+        dv/dλ * du/dλ = (1-rs/r)
+        v-u/2rs = r/rs + log (r/rs - 1)
+        => e^(v/2rs) * (-e - u/2rs)
+        = r/e^rs (r/rs - 1)
+        
+        We will take that 
+        V = +e^(v/2rs)
+        U = -e^(u/2rs)
+        so we get that r/e^rs (r/rs - 1) = -VU
+        The 1st image is the KS metric currently
+        
+        By the way, V and U are null geodesics (light-like)
+        
+        Now, we will tke that
+        T => V+U/2
+        X => V-U/2
+        so we get that (ct,r) => (u,v) => (U,V) => (T,X)
+        but converting from other coordinates like this may seem like too much work, so we will derive formulas for calculating T and X directily
+        
+        T = e^(r/2rs) * sqrt(r/rs - 1) 1/2^(e^{ct/2rs} - e^{ct/-2rs})
+        X = e^(r/2rs) * sqrt(r/rs - 1) cosh (ct/2rs)
+        you can also just use sinh(ct/2rs) for T, instead of this long ass thing
+        
+        Okay now, The KS coordinates are not 1 hyperbolic region, but they are instead seperated into 4 hyperbolic regions
+        
+        Region 1: (+, +), (+sinh, +cosh), (r >= rs)
+        Region 2: (+, ,), (+sinh, -cosh), (r <= rs)
+        Region 3: (-, -), (-sinh, -cosh), (r >= rs)
+        Region 4: (-, +), (-sinh, +cosh), (r >= rs)
+        
+        rIII and rI are facing outwards, while
+        rII and rIV are inwards
+        Image
+        r_II = 0 => The Singularity
+        r_IV = 0 => White Hole Interior
+        r_I = Exterior Region
+        r_III = r_I, but the direction of the black hole is reversed
+        
+        r_I and r_III are connected via the Einstein-Rosen Bridge (Basically a wormhole)
+        
+        ~We have no evidence for the wormhole on Einstein-Rosen Bridge tho,
+        ~ Region III and IV don't exist for black holes that form from Stellar Collapse
+        ~ We can basically ignore IV and I, as we only need the exterior region and singularity.

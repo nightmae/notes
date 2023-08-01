@@ -1,0 +1,83 @@
+        guv = nuv + huv
+        gravitational waves happen at the huv part.
+        We will cover linearized gravity in this thingy.
+        in guv = nuv + huv,
+        => nuv is equal to flat spacetime
+        => gravitational waves are distributed in linearzed gravity in huv
+        
+        The weak gravity limit is that the magnitude of huv is <<1, so we can approximate it at 0.
+        Our goal is to calculate that Guv = Ruv - 1/2 Rguv in Linearized Gravity.
+        Aswell as the metric guv, all up to the Ricci Scalar.
+        
+        We will not be discussing the definition of weak gravity, as there is like a good wikipedia page on it.
+        We will take that
+        => h_ab * h_uv = 1 
+        hab(∂σhuv) = 0
+        
+        Gravitational waves detected by the LIGO detector usually range from
+        wavelength λ: 100s km - 1000s km, and
+        period T: ~0.001s - ~0.01
+        Usually, they dont oscilate very fast in terms of uv, so its reasonable to assume huv is very small.
+        Magnitude is denoted by mag(), or ||||, with a term inbetween the first two and other two.
+        guv = nuv + kuv
+        guσ g^σv = δ^v <u 
+        mag(huv/kuv) << 1
+        0 = h_uσ n^σv + n_uσ k^σv + (h_uσ k^uσ (goes to zero))
+        h_uσ n^σv = -n_uo k^σv
+        g^uv = n^uv - h^uv
+        h^uv (raised indices) = h_pσ n^pu n^σv 
+        n/g^σv * n/g_uσ* = δ^v <u
+        
+        h^u <v = h_σv n^uv
+        Γ^σ <uv = 1/2 g^σa (∂vgau + ∂ugav 0 ∂aguv)
+        
+        ==> Γ^σ <uv = 1/2 g^σa (∂vhau + ∂uhav 0 ∂ahuv)
+        
+        In Weak Gravity, mag(h^σa) << 1
+        
+        Γ^σ <uv = 1/2 n^σa (∂vhau + ∂uhav 0 ∂ahuv), for weak gravity
+        
+        Now, we will calculate the Riemann Curvature Tensor:
+        R^p <σuv = ∂u(Γ^p <vσ) - ∂v(Γ^p <uσ) + 0 + 0
+        R^p <σuv = 1/2 n^pa (∂u∂σhav - ∂u∂ahvσ - ∂v∂σ hau + ∂v∂a huo)
+        If we expand some of the terms, we get
+        Γ^y <vσ Γ^p <uy === n^ya n^pa (0,0,0,0...)
+        
+        Now we will calculate the Ricci Tensor, which is a summation of the riemannian curvature tensor
+        R_σv = R^u <σuv
+        We can use the inverse metric to raise the lower indicies, and combine like terms to get:
+        R_σv = 1/2 ∂u∂σh^u <v - ∂^u∂ahvσ - ∂v∂σ h^u <u + ∂v∂a hao
+        
+        And then we get that
+        R_σv = 1/2 ∂u∂σh^u <v - ∂^u∂ah^a <σ - ◻h_vσ - ∂v∂σ h
+        Now we will calculate the Ricci scalar which is
+        R = R^v <v
+        Again, we can use the inverse metric to lower raise indices, and remove terms that go to 0.
+        Doing this simple process, we get
+        R = ∂u∂σ h^uσ -  ◻h
+        Now we can compute the einstein field equations in weak gravity:
+        Guv = Ruv - 1/2 guv R =
+        => ∂a∂u h^a <v + ∂v∂a h^a <u - _◻huv - ∂u∂v h
+        ul.part => - 1/2 g_uv (∂a∂b h^ab - ◻h) =
+        => - 1/2 (nuv + huv) (∂a∂b h^ab - ◻h ) =
+        = - 1/2 nuv (∂a∂b h^ab - ◻h)
+        ==> 0
+        
+        mag(h^ab)<<1
+        mag(∂u∂v h^ab)<<1
+        
+        After some LENGTHY derivation, which i don't feel like writing down, we get that
+        = 1/2 (∂^a ∂u h_av + ∂^a ∂<v h_ua - ◻h_uv - ∂u∂v h - nuv ∂^a ∂b h_ab + nuv◻h )
+        => ℏ_uv = huv - 1/2 nuv h 
+        ==> *h_uv = ℏ_uv + 1/2 nuv h
+        
+        Just as quick reminder of exchange of summation indices:
+        ∂u h_uv
+        => ∂u n^ua** h_a ^v 
+        => ∂^a h_a ^v
+        aswell as
+        ∂u h^uv
+        => ∂^a h_a ^v
+        
+        This is the end of the derivation of the einstein field equations in weak gravity
+        In the next note thingy we will cover the lorentz gauge, and after that the transeverse traceless gauge

@@ -1,0 +1,206 @@
+We're going to derive the Friedman Le Metre Robertson Walker metric, also called the
+FLRW metric for short. This is the metric that describes the expansion of the universe over time, which is
+used in the standard model of cosmology. The FLRW metric was discovered and developed
+independently by four different physicists and so the metric is named after all of them. The FLRW metric
+is actually three metrics combined into one depending on the value of k, which is positive one for a
+closed universe, zero for a flat universe and negative one for an open universe. In later videos we'll use
+the FLRW metric to derive the Friedman equations which directly govern the rate of the universe's
+expansion based on mass, density, pressure, curvature and the cosmological constant. 1s So our goal for
+this video is to derive a metric that describes the large scale geometry of the entire universe and this will
+be the FLRW metric. 1s This metric can be derived from one fundamental assumption about the nature of
+the universe. This fundamental assumption is called the cosmological principle, which has two parts. The
+first assumption of the cosmological principle is that the universe is spatially homogeneous. This means
+that the universe looks the same from all points in space. You can think of this as meaning that the
+universe doesn't appear to change when we translate our location from one spatial point to another. This
+also means that the universe has no spatial center, since all spatial points are equivalent. The second
+assumption of the cosmological principle is that the universe is spatially isotropic, and this means that the
+universe looks the same in all spatial directions. You can think of this as meaning that the universe
+doesn't appear to change when we rotate our frame of reference. 1s Now, you might say that these two
+assumptions are obviously false. After all, our solar system has the burning hot sun, a few planets, many
+asteroids, and lots of empty space, depending on where you look. So it's obviously not the same at all
+locations and in all directions. But when we say the universe is homogeneous and isotropic, we're talking
+about the universe on average at the largest scales. If we zoom out from our solar system, we'll see our
+galaxy, then galaxy clusters and superclusters, and then the weblike galaxy filament us. At these huge
+scales, we can divide the universe into boxes that are hundreds of millions of light years wide. And at this
+large scale, most boxes look basically the same. 2s So when we make the assumption that the
+cosmological principle is true, we're assuming that the universe looks the same at all points and in all
+directions, on average at the largest scales. I said earlier that the FLRW metric covers three metrics in
+one. These match up with the three possible spatially homogeneous and isotropic universes, s, which are
+the closed, flat, and open universes. Now, from a mathematical point of view, there are actually other
+geometries that are spatially homogeneous and isotropic, such as a flat geometry that wraps around at the
+edges and makes a taurus shape. However, in this video, I'm going to ignore the more complicated
+geometries that have holes in them. So I'm only going to consider the simply connected geometries
+without holes. And in this case, there are only three possible options. To start, let's focus on the familiar
+flat space case first. 2s The metric for flat spacetime is called the menkovsky metric. We know that in
+Cartesian coordinates, the Flat Minkovsky Metric looks like this. And we're using the mostly minus
+convention here. If we describe flat spacetime in spherical coordinates instead, the menkovsky metric
+looks like this. Let's think about how the Menkovsky metric would change if we assume that the
+cosmological principle is true and the universe looks the same at all points in all directions at the largest
+scales. Well, notice that the Cosmological principle says that the universe is spatially homogeneous and
+spatially isotropic. It doesn't say that the universe is the same over time. So, according to the
+Cosmological principle, we can allow the scale of space to change over time. We do this by scaling space
+by a factor a of t that depends on time. This has the effect of multiplying the three by three spatial portion
+of the metric by a of T squared. Since the spatial metric components are the dot product of two spatial
+basis vectors. 1s And we're forced to multiply all the components in the spatial part of the metric by the
+same factor because we need to treat all directions as equivalent, since the universe is spatially isotropic.
+1s So this metric describes a flat space whose scale changes over time according to the scale factor A of
+T. Taken as a whole, this four by four metric represents a curved space time described by a nonzero
+remon curvature tensor. But when we look at the three by three spatial part of the metric at a given
+instant of time, this three by three metric represents a flat space with a spatial Riemann curvature tensor
+
+that equals zero. So even if the individual spatial slices in this metric are flat, spacetime as a whole is
+curved, provided that a of T is not constant. So a flat 3d space whose scale is changing over time with a
+scaling function. A of T is one possibility for a universe that's spatially homogeneous and isotropic. But
+that's not the only option. There are two other choices for spatially homogeneous and isotropic universes,
+which are the closed universe, also called the spherical universe, and the open universe, which is also
+called the hyperbolic universe. Let's look at the case of a spherical universe first. 2s If we look at the
+familiar twodimensional spherical surface, all points on the sphere are basically equivalent, and they are
+basically the same in all directions. So, just like the flat plane, the sphere also meets the criteria of being
+spatially homogeneous and isotropic. But our universe is spatially threedimensional, not twodimensional.
+So how would we describe a three dimensional sphere mathematically? 1s Well, we know that the
+equation of a circle, sometimes called the onedimensional sphere in the XY plane, is given by X squared
+plus Y squared equals r squared, where capital r is the circle's radius. We can also parameterize the circle
+by the parameter theta, where x equals r times cosine theta and y equals r times sine theta. If we plug x
+and y into this formula and factor out R squared, we can use the trig identity cos squared plus sine
+squared equals one to find that this equals r squared. So this parameterization involving theta satisfies our
+circle equation. The equation of the two sphere in 3D space is x squared plus Y squared plus z squared
+equals the radius squared. 1s We can parameterize the sphere in terms of theta and phi. We can think of
+theta as selecting an X coordinate on the sphere. And we can think of phi as tracing out a circle of radius
+R times sine theta at that specific X coordinate. If we sub this parameterization into X squared plus Y
+squared plus Z squared, we can factor out R squared factor sine squared, and collapse this to a one and
+collapse this to a one to get R squared as expected. So this parameterization satisfies the two sphere
+equation. Now the equation of a three sphere in 4D space is X squared plus Y squared plus Z squared
+plus W squared equals the radius squared. We can't really visualize this easily with a drawing, but we can
+parameterize the three sphere in terms of three angle coordinates theta, phi, and chi. To get these, we can
+follow the pattern for the parameterizations. For the one sphere and two sphere. The first coordinate is R
+times cosine theta. For the next coordinate, we turn cosine into sine and add cos sine phi on the end. For
+the third coordinate, we turn cosine into sine and add cosine chi on the end. And for the fourth
+coordinate, we turn cosine into sine. We can confirm that this parameterization satisfies our three sphere
+equation by factoring out R squared and collapsing all the cosine squared plus sine squareds to ones. If.
+We can use these formulas for a sphere in any dimension and we can always follow a similar pattern to
+get the parameterization for that dimension. But our spatial universe is three dimensional, so we're just
+interested in the three sphere. Recall that the basis vectors for our coordinate system are just the partial
+derivatives with respect to the coordinate variables. We can write these basis vectors in terms of the xyzw
+basis vectors using multivariable chain rule. And if we work through all these partial derivatives, we get
+these formulas for the basis vectors. Now, there are two different metrics we can use to analyze the
+geometry of the three sphere. We could use the extrinsic xyzw metric of the surrounding four
+dimensional space and this is just the four by four identity matrix or chronicler delta, since the xyzw
+basis is Euclidean and orthonormal. Or we could use the intrinsic metric which only uses the angle
+parameters theta, phi and chi where the metric components are the dot product of the theta phi chi basis
+vectors. If you work through all these dot products, the off diagonal metric components go to zero and
+the diagonal metric components look like this. So this is the intrinsic three by three metric of the three
+sphere. If. If you take this metric and go through the process of calculating the Ricci scalar for the three
+sphere, you'll find that it's a constant positive number everywhere. Six over R squared, where R is the
+sphere's radius. A constant, Ricci. Scalar is exactly what we'd expect for a space that's homogeneous and
+isotropic. 2s Now, since the names for these three angle coordinate variables are arbitrary, I'm just going
+to relabel them so that they look like this. And now we see that the metric for the three sphere almost
+looks like our flat metric in spherical coordinates, but with the R coordinate replaced by sine of chi. So
+we have a metric for a universe that is spatially flat and another metric for a universe that is spatially
+spherical. The third type of metric that is spatially homogeneous. And isotropic is the metric for
+hyperbolic space. Hyperbolic Space is a little bit more difficult to visualize. But I'll do what I can to show
+you what it looks like. 1s So the two sphere s two is a space where every point looks like two frowns
+crossing each other if we're standing on the outside of the sphere, or two smiles crossing each other if
+we're standing on the inside of the sphere. The hyperbolic plane h two is a space where every point looks
+like a frown and a smile crossing each other. So in two, each point looks like a saddle point. When we
+look at a circle of a given circumference in flat space, the area and the circumference of a circle are given
+to us by the standard flat space formulas. On a sphere, a circle with the same circumference has an area
+that's greater than what we'd see in flat space because the space bulges out and increases the surface area.
+
+In the hyperbolic plane, a circle with the same circumference has an area that's smaller than what we'd
+expect in flat space because the circumference wastes a lot of distance going up and down around the
+saddle point, and it doesn't enclose as much area. 2s It. The equation for the twodimensional hyperbolic
+plane is x squared plus Y squared minus Q squared equals negative R squared. Alternatively, we could
+multiply both sides of the equation by negative one to get q squared minus X squared minus Y squared
+equals R squared. This gives the equation of a two sheeted hyperboloid. We can parameterize this surface
+with angles chi and theta, where the hyperbolic cosine of chi selects the q coordinate of the surface and
+theta traces out a circle of radius r times sine h of chi in the XY plane. Now, even though we can draw
+this hyperboloid surface, this is not a true representation of the hyperbolic plane, because the distance
+function for measuring distances on this hyperboloid are not Euclidean distances, because the metric
+signature has minus signs in it. So we cannot accurately judge distances on this surface using our eyes,
+because the metric we're using to measure distances is not Euclidean. 2s The hyperbolic plane is usually
+visualized using projections of various kinds where the distances and sizes of objects are distorted. This
+drawing by Escher is one of the most common visualizations of the hyperbolic plane, where each fish or
+triangle occupies the exact same area according to the hyperbolic metric. Even though it doesn't look like
+it to our eyes, I've linked to another video in the description that does a really good job of helping
+visualize hyperbolic space. 1s With that said, the chi theta parameterization can be substituted into our
+Qxy formula for hyperbolic space. After factoring out R squared and factoring sine h squared, this goes
+to one, and using the hyperbolic trig identity, cos h squared minus sine h squared equals one. This
+becomes negative R squared, as expected. Now to get the formulas for hyperbolic three space. We can
+just follow the pattern like we did before. The first coordinate variable equals R times cos h of chi. Then
+we change cos h to sine h and add sine on the end. Then we change cosine to sine and add a cosine on the
+end. Then we turn cosine into sine. If we plug this parameterization into our formula for hyperbolic three
+space after factoring and canceling, we end up with negative R squared at the end. So this
+parameterization works if. So no matter what the dimension of hyperbolic space we're looking at is, we
+can always use the same pattern to find out the parameterization. But for our purposes, we're only
+interested in hyperbolic three space. 1s As before, we can get the basis vectors for chi, theta and phi by
+expanding them in terms of the qxyz basis vectors using multivariable chain rule. And as before, we can
+use the extrinsic four by four metric with qxyz to measure distances. Or we can use the intrinsic three by
+three metric with chi theta phi. Just like before, the off diagonal metric components go to zero, but the
+diagonal components now look like this. If you calculate the reachy scalar for hyperbolic three space,
+you'll find that it's a constant negative value everywhere. Negative six over r squared. Again, a constant
+reachy scalar everywhere is exactly what we'd expect for a space that's homogeneous and isotropic. So
+this is what our metric looks like for hyperbolic three space. It looks the exact same as the metric for the
+three sphere, except the sine term is replaced with a hyperbolic sine. 2s So we now have three different
+metrics for the three possible homogeneous and isotropic spaces. The spherical space, also called closed
+because the space is finite. The flat space and the hyperbolic space, also called open because it goes out
+to infinity. And for consistency, I'm going to replace the flat spaces R variable with chi. You. We can
+now insert these three by three spatial metrics into the spatial part of our four by four spacetime matrix,
+where these spatial parts are multiplied by the scaling factor A of T, which is consistent with a spatially
+homogeneous and isotropic universe. I'm also ignoring the capital R parameters for the spherical and
+hyperbolic geometries, since that's a constant that can be absorbed into a of T, which basically plays the
+same role of telling us how curved the space is. These three metrics are basically the exact same, except
+for the role of the chi coordinate. 1s The chi coordinate is sort of like a radial coordinate that points out
+from the origin of the coordinate system. Although chi doesn't measure the true distance from the origin,
+for a closed universe chi is the circular angle measured outward from the origin. And for an open
+universe, chi is the hyperbolic angle measured outward from the origin. It's also important to remember
+that since the scale of the universe is changing over time with the scale factor A of t, the actual distance
+represented by one unit of chi is also changing over time. 1s Mathematicians have actually come up with
+a trick to write down all three of these metrics using a single unified metric. And this is done by
+introducing a parameter k, which is either plus 10 or negative one. 1s We can do this by rewriting the chi
+terms as the variable r. So for a closed universe, r equals sine of chi. For a flat universe, r equals chi, and
+for an open universe, r equals hyperbolic sine of chi. So what we're doing here is we're basically doing a
+change of variables where the CT, theta, and phi coordinates stay the same. But the chi coordinate is
+rescaled to a new coordinate called r. Remember, basis vectors are just the derivative operators with
+respect to coordinate variables. So to convert between a chi basis vector and an r basis vector, we use the
+chain rule conversion term dr by d chi. If we look at this derivative for each of the three universes, we get
+
+cosine of chi for a closed universe, one for a flat universe, and hyperbolic cosine of chi for an open
+universe. 2s In terms of the metric components, GRR equals er and g chi. Chi equals e chi dot e chi. So
+the conversion factor between them is the square of this derivative. For the closed universe, cosine of chi
+squared is just one minus sine of chi squared. And since sine of chi is just r, this is also equal to one
+minus r squared. For a flat universe, we just leave one squared as one. For the open universe, cos h of chi
+squared equals one plus sine h of chi squared. But since sine h of chi is just r, this becomes one plus r
+squared. 1s So we can rewrite all three of these conversion factors using the form one minus k r squared,
+where k is plus one for a closed universe, zero for a flat universe, or negative one for an open universe.
+So what we've learned is that to convert from the GRR metric component to the g chi chi metric
+component, we multiply by the square of this derivative, which is one minus k r squared. And going in
+the other direction from chi to r, we divide by one minus k r squared. 1s So to change our metric from
+using the chi coordinate to using the R coordinate, we divide the G chi chi component by one minus KR
+squared to turn it into the GRR component. Then we replace the various chi functions with R as we've
+defined up here. The resulting metric describes all three spatially homogeneous and isotropic universes
+with a spatial scale factor A of T that can change over time. This is the FLRW metric, which can describe
+an expanding universe. Before the end of the video, I'll say one more thing about this coordinate change
+from chi to R that we did, which will hopefully make things more clear for the closed universe. The chi
+theta phi chord are all circular angles used to identify a point on the three sphere. These are called
+hyperspherical coordinates. After defining R as sine of chi. The R theta phi coordinates are called
+reduced circumference polar coordinates. 1s On the three sphere. The chi coordinate is the angle from the
+North Pole to a specific point. We can think of this point as lying on the edge of a disk with a radius
+small R. Looking at this triangle, we can see that R equals the sine of chi, which is the definition we
+made earlier. And this red disk containing the point has a circumference of two Pi R. Similarly, for the
+open universe, chi is a hyperbolic angle and all the other coordinates are circular angles. And we can
+define R as sine h of chi. 1s If we look at the hyperboloid sheet, chi is the hyperbolic angle of a point
+measured from the vertical axis. Looking at this triangle, we can see that the radius small R of the red
+disk is sine h of chi as we defined previously. And the circumference of this disk is again two Pi. 2s So
+with the R coordinate, we're not measuring the true walking distance from the origin to a point in the
+curved space. Instead, we're drawing a circle around the origin containing that point with a constant
+radius. And we define R to be the radius of a flat disk containing this point. R is called the reduced
+circumference coordinate. It because it's defined by taking a circumference around the origin and
+dividing it by two pi. So, again, the R coordinate is not the walking distance radius from the origin to a
+point in curved space. Instead, R is the circumference of a circle containing that point reduced by a factor
+of two pi. We actually saw something similar for the Schwartz shield coordinates in video 108 B, where
+the R coordinate is equal to a circle's circumference divided by two pi. So the Schwartz shield R
+coordinate is also a reduced circumference coordinate, not a true radius. 2s So that's it for this video. In
+the next video, we'll compute the various tensors in the Einstein field equations that come from the
+FLRW metric, and this will help us solve for the motion of free particles in an expanding universe.
+
+

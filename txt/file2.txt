@@ -1,0 +1,84 @@
+        Derivation of the einstein field equations
+        If you remember, Pc^2 = T^00
+
+        And The Laplacian (∇^2Φ) is equal to 4πGp
+        p in this cause is mass density rho; i am too lazy to copy the symbol
+
+        This means that R<00 = 4πGT<00
+        so Ruv = 4πGTuv
+
+        We will say that The einstein tensor Guv is equal to negative KTuv
+        Guv = -KTuv
+        ∇uT^uv is divergent
+        [g^uv Tuv = T^u <v] <- Example of raising a bound
+        [g<uv T^uv = T<u ^v] <- Example of lowering a bound/index
+
+        R^uv = KT^uv
+        => ∇uR^uv can not equal 0
+        K in this case is the greek symbol "Kappa"
+
+        Ruv = 1/2Rg^uv = KTuv
+        => this is the formula for the Einstein Tensor (Guv)
+
+        ∇uGuv = 0
+        If we take the cosmological constant Λ, which was equal to 0 when einstein wrote his paper on general relativity, we get that
+        => ∇u [G^uv +- Λguv] = 0
+        g<uv in any direction is 0.
+
+        [ G^uv - Λg^uv] = KT^uv
+        The region in the brackets predicts spacetime curavture.
+
+        in this lecture, we are going to:
+        a) Prove ∇u(Λguv) = 0
+        b) Prove ∇uGuv = 0
+        c) Derive the proportionality constant K = (8πG) / (c^4)
+        d) derive the schwarzschild radius from the einstein field equations (left as an exercise for the reader)
+
+        a) if you remember from the previous lecture, V<T(VW) = 0
+        if you also remember, e<a is equal to partial derivative of a, these are interchangable
+        => V<ea (eu ev) = (∇<ev eu) * ev + eu * (∇<ea ea) =
+        = ∂<a (eu * ev) = Γ^σ <au (ev * eσ) + Γ^σ <av (eu * eσ) =
+        =∂(guv) = Γ^σ <au gσv + Γ^σ <av guσ
+        after some more derivation we get that
+        [0 = aσv^v (Ω^σ <uv + Γ^σ <uv)]
+        b)
+        If you remember, R<uvpσ = +Rpσuv, and
+        => [R^p <σuv + R^p <vσu + R^p uvσ = 0]
+        In Riemannian normal coordinates,
+        guv = nuv at point p, and
+         Γ^σ <uv = 0 at point p
+
+        ==>  ∂a∂u (Γ^p <vσ) - ∂a∂u (Γ^p <uσ) at point p
+         [R^p <σuvja + R^p <σaujv + R^p σvaju = 0] 
+
+        g^σv (Rσvja - Rσaujv - Rσvaju) = 0
+        g^σv  (R^v <vja - R^v ajv - R^ u <aju) = 0
+         Rja = 2R^u <aj = 0 
+         [1/2 Rja - R^u <aju = 0]
+        [R^uv <ju - 1/2 g^uv Rju = 0]
+        c) Guv - Λguv = KT^uv
+        => ∇u(Λguv) = 0
+        => ∇u(T^uv) = 0 
+        We will take a low velocity limit => [v<<<c]
+        if you remember from special relativity Beta is a fraction of the speed of light so
+        => B = u/c = 0
+        => y=1
+        => proper time tau = t
+        We will also take the weak gravitational limit => [guv approx = nuv + huv]
+        => nuv = diag(+1, -1, +1, -1)
+        ||huv| <1
+        We will also assume Time independece of ∂tauguv = ∂0 guv = 0
+
+        We will get that Ruv = -1/2 Rδuvj, T00 = pc^2 j, Tuv = 0
+        -r = Kpc^2 ==> 2R00
+
+        2 1/c^2 (∇^2φ) = K (If you remember the Laplacian is equal to 4πGp)
+        K = 8πG/c^4
+        We will derive the equations further to get R = -4Λ - kT
+
+        Ruv = 1/2Rguv - Λguv = kT^uv
+         [Ruvg^uv - 1/2Rguv g^uv - Λδ^u <u = kT^u <u ]
+        R - 1/2R4 - Λ4 = kT
+        R - 2R - 4Λ = kT
+        R = -4Λ - kT
+        Ruv = K(Tuv - 1/2 Tguv) - Λguv ==> [Ruv - 1/2Rguv - Λguv] = 8πG/c^4 T = Guv - Λguv = 8πG/c^4 T**

@@ -1,0 +1,131 @@
+        We will be deriving it in the schwarzschild coordinates
+
+        The schwarzschild metric applies for a mass thats:
+        -Spherically Symmetric
+        -Non-rotating and uncharged
+
+        It describes:
+        -Slowly rotating stars/planets
+        -Non-rotating black holes (also called Schwarzschild black holes)
+
+        It predicts:
+        -Gravitational time dilation, and the gravitational doppler effect
+        -Bending of light due to gravity
+        -Existence of black holes with radius rs
+
+        We are getting into the derivation now.
+        guv M.T =>
+        Coefficient: Γ^σ <uv = 1/2 g^σa (∂v(gau) + ∂ugav - ∂aguv)
+        => Geodsesic equation: d^2x^σ / dλ^2 = Γ^σ <uv [(dx^u/dλ) (dx^v/dλ)]
+
+        Inside earth, Tuv cannot equal 0,
+        in the exterior vaccuum, Tuv = 0.
+
+        Non-cosmological, Λ=0
+        R^u <u - 1/2 Rδ^u <u
+        R-2R = 0
+        R = 0 => this is also known as Ricci Flat
+
+        In cartesian coordinates we have (ct,x,y,z), but in schwarzcshild coordinates we use (ct,r,θ,φ)
+        r = sqrt(x^2 + y^2 + z^2)
+        θ = sin^-1 (z/r)
+        φ = tan^-1 (y/x)
+        ct is the same
+
+        The first image discribes the minkowski metric with these coordinates
+
+        In static spacetime, we assume that ∂uguv= 0 (Metric doesnt depend on time)
+        and that t => -t (doesn't change guv)
+
+        so we get that  gtt = et*et => (+et)(+et) = +gtt
+        and also, => gti = (-et)*ei = -gti
+
+        We will also use negative sigma notation (space-like convergence)
+        We will also allow for radial scaling c(r).
+
+        eθ * er = 0
+        eφ * er = 0
+
+        The second image describes the schwarzschild metric in matrix notation,
+        from this, we get that:
+        A(r) = gtt (r,θ,φ)
+        -B(r) = grr (r,θ,φ)
+
+        guv = Γ^σ <uv => Ruv ==> Newtonian Gravity => *A(r), B(r)
+        We get the formula
+        [[ Γ^σ <uv = 1/2 g^σσ (∂vgσv + ∂ugσv - ∂σguv ) ]]
+        We will not be doing derivations of the connection coefficients in schwarzschild coordinates, instead i will just state the values:
+        Γ^0 <00 = 0,
+        Γ^0 <ii = 0,
+        Γ^0 <11/22/33 = 0
+
+        Γ^0 <ij = θ (i cannot equal j)
+        Γ^0 <0i = 1/2 g^σσ (∂ig00)
+        Γ^0 <01 = Γ^0 <10 = 1/2 1/A (∂rA)
+
+        Γ^1 <22 - -r/B
+        Γ^1 <33 = -r * sin^2 (θ) / B
+        Γ^2 <00/11/22 = 0
+        Γ^2 <33 = 1/2 (-∂θ (-r^2 (sin(θ)^2)) ==> -sin(θ) cos(θ)
+        Γ^2 <12 = 1/r
+
+        Γ^3 <13 = 1/r
+        Γ^3 <23 = cot θ 
+
+        These are the same for the mostly negative (+---) and mostly positive (-+++) guv metric, proof is trivial and left as an exercise for the reader
+
+        Next, now that we have the connection coefficients, we are going to calculuate:
+        a) R00,
+        b) R11,
+        c) R22
+
+        a) R00:
+        If we expand the normal term, we get
+        => ∂r(∂rA/2B) + (∂rA/2B)(∂rA/2B)+2(∂rA/2B)(1/r) - A/2B = 0.
+        We will call ∂rA = A'
+
+        b) R11:
+        Expanding the normal terms again, it gives us that R11 Is just equal to 0.
+
+        c)R22:
+        If we expand the connection coefficients once again, we get something that looks like the following:
+        => -(1/B) + 1 - r∂ra/2AB + r∂rB/2AB^2
+        => -2AB + 2AB^2 - rA'B + rAB' = 0
+        => rA' = 1-A
+
+        A(r) = 1 - k/r
+        A' = k/r^2
+        A(r)B(r) = K, this is the case as r->infinity
+        (1)(1) = K
+
+        Σ(1, n=1) 1 = K
+
+        B(r) = Λ/A(r) for all r
+        k = 2GM/c^2
+        => this is the formula for calculating the event horizon of a non-rotating, non-charged mass
+
+        We will use cartesian coordinates here:
+        Γ^i <00 = (∂Φ/∂x^i) (1/c^2) 
+
+        When we have a summation Σ:
+        T^ua gav => T^ua (nav + hav)
+        => T^ua nav + T^ua hav (This term goes to 0, as ||hav||<< 1)
+        = T^ua nav + 0
+
+        When we have a derivation d/dx:
+        ∂Φguv => ∂σ (nuv + huv)
+        = nuv + ∂Φhuv
+        ==> 0 +  ∂Φhuv
+
+        g00 = n00 + h00
+        Γ^i <00 = 1/2 ∂Φh00  ==> 1/c ∂iΦ
+        == h00 = 2Φ / c^2
+        = -2GM/c^2 r = k = rs
+        2GM/c^2 r
+
+        Φ = - GM/r,
+        Fg = m(∇Φ)
+        => Φ~ = Φ + Φ_infinity
+
+        ∇Φ = ∇Φ + ∇Φ_infinity
+        

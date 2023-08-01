@@ -1,0 +1,110 @@
+        The formula for the schwarzschild radius is 
+        rs = 2GM/c^2
+        We will derive this formula in this lecture thingy.
+        We will take ct => gravitational time dilation
+        
+        In relativity, never trust your eyes or space coordinates for measurements. Use the metric rs.
+        Time-like:
+        r>rs
+        0 < (rs/r) < 1
+        0 < (gtt) < 1
+        
+        Light-like (null):
+        r=rs
+        (rs/r) = 1
+        gtt = 0
+        
+        Also Time-like:
+        r -> infinity
+        r^2/r -> 0
+        gtt -> +1
+        
+        Space-like:
+        r < rs
+        gtt < 0
+        
+        We will consider constant θ, φ, We will also set λ=ct
+        cτ = ∫|d/dλ| dλ
+        cτ = ∫sqrt((dct/dλ ∂/∂ct + dr/dr ∂/∂r) * (dct/dλ ∂ct/∂ct))
+        cτ = ∫sqrt((dct/dct ∂/∂ct) * (dct/dct ∂/∂ct))
+        cτ = sqrt(gtt)
+        cτ = sqrt(1 - rs/r) ct
+        And also, the formula for gravitational time dilation is
+        ct = 1 / sqrt(1 - 2MG/rc^2)
+        if we have, for example τ2rs = sqrt(1/2t), it's equal to sqrt(1/2)tr->infinity
+        if we have τ2rs = 100 years, the result is actually 70 years due to gravitational time dilation, i don't really know how to explain it better.
+        
+        This only holds for constant r,θ, φ
+        r doesn't directly represent physical distance L0
+        
+        L0 = ∫sqrt(grr)
+        L0 = ∫-sqrt(- 1/1-rs/r)
+        L0 = ∫sqrt(r / r-rs)
+        we will take r=z^2 in account
+        L0 = ∫2 (z^2 / z^2 - rs) (substitute sqrt(rs) y with z, so sqrt(rs) dy = dz)
+        L0 = sqrt(r) sqrt(r-rs) + rs ln(|sqrt(r)| + sqrt(r-rs)) + C
+        => This is the spot outside of the schwarzschild radius rs
+        
+        if rH = 2rs, and rL = 1rs
+        the dr is 1rs, but the L0 is 2,3rs (4,6M G/c^2)
+        
+        We will take flat spacetime in account,
+        L0 = r
+        r = rs
+        
+        for r>>rs, we can act on it, if r gives r approx= L0
+        L0 = ∫|d/dλ| dλ
+        L0 = ∫ ∂/∂φ * ∂/∂φ dφ =
+        L0 = ∫sqrt(-grr) (=> gφφ = -r^2)
+        L0 = ∫sqrt(r^2) dφ
+        L0 = rφ
+        φ= 2π => 2L0 = 2πr
+        Near rs, space is bigger on the inside
+        This is due to a thing called Flamm;s paraboloid, which i will not give a detailed explanation in, you can look it up for yourself.
+        
+        but basically,
+        w(r) = 2sqrt(rs(r) - rs) if φ=π/2, and ct is constant
+        => infinity as r=rs
+        r = 0 singulartity: A true geometrical singularity, meaning the spacetime manifold stops
+        r = rs: A coordinate singularity, meaning it only appears as one due to our choice of coordinate system, in other lectures we will derive better coordinate systems for rs, such as EF or KS.
+        
+        if you remember, rs = 2GM/c^2,
+        imagine an object, rs = 2GM/c^2 > r0, => Light-like geodesics
+        
+        If we take that 0 = dx^u/dλ dx^v/dλ guv
+        we can expand the terms to get:
+        0 = (dct/dλ)^2 (1-rs/r) - (dr/dλ)^2 (1/1-rs/r)
+        => +- dct/dλ (1-rs/r) = dr/dλ, if λ=ct
+        ==> dr/dt = +- c(1/rs/r)
+        We will also take that cτ = sqrt(1 - rs/r ct) < ct
+        
+        dct/dr = +- r/r-rs
+        From which we get the formula:
+        ct(r) = += (r + rs log(r-rs)) + k
+        So for incoming geodesics, we have:
+        ct(r) = -(r+rs log(r-rs)) + k
+        => ct=cτ
+        => r->inf
+        
+        And for outgoing geodesics we have:
+        ct(r) = +(r+rs log(r-rs)) + k
+        => r=rs => appears stuck in space
+        
+        Incoming:
+        Clocks tick slower and slower such that nothing will ever cross the rs from the pov of an outside observer
+        -things will just freeze slightly before the crossing point
+        
+        Outgoing: (Reverse of this)
+        Light beams near rs appear stuck in place due to time dilation, but eventually return to their trajectory in flat space
+        
+        Observers near rs wont notice anything strange !!!
+        
+        r<rs (inside) =
+        => ct(r) = +- (r+rs log(-r+rs))+k
+        
+        (er)^2 = grr = -(1/1-rs/r) (lightlike)
+        
+        r>rs => grr<0 (spacelike)
+        
+        r=rs => grr undefined,
+        r<rs =< grr>0 (timelike)

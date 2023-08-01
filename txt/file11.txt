@@ -1,0 +1,93 @@
+        How Cross/Plus polarization affects free particles in general relativity
+        In the previous note's we derived:
+        Einstein Field Equations, with all of it's components,
+        Wave Equation,
+        Weak Gravity,
+        Lorenz Gauge,
+        "Transeverse Traceless" Gauge,
+        (+) and (x) Polarizations,
+        
+        And now we're reviewing how these polarizations affect particles in a free-state.
+        We will assume vacuum T_uv|0>
+        (u,v are mu and nu, i don't feel like copying them everytime i need to use them, which is very frequent)
+        First image is what the matrices of the polarizations look like in LaTeX.
+        
+        As we know,
+        ◻ħ_uv = 0, this is from the "TT" Gauge.
+        
+        In relativity, coordinate systems are arbitrary and do not affect our physics in the real world, a change of coordinate systems does make specific things easier to visualize/understand
+        
+        You may have wondered, what if ◻ħ_uv = 0 is just a result of wave-y gravitational waves?
+        Real gravitational waves are spacestretched and compressed
+        Meaning it could just be wave-y coordinate lines.
+        
+        Geodesics Recap
+        -Geodesics are the paths that particles in a free-state take with no forces acting on them.
+        -They are only affected by gravity (THE CURVATURE OF SPACETIME NOT A 4-VECTOR F)
+        -They do NOT depend on the coordinates
+        
+        L_0, Proper Length Recap
+        -The proper length L0 measures the distance between two spacelike seperated points at a constant time.
+        -Also does NOT depend on coordinates
+        -Equation for L0 is:
+        ∫mag(d/dλ) dλ
+        where λ is the tangent-line path parametre
+        
+        Geodesics and Proper Length measure how gravitational waves stretch/compress space in a coordinate-independant way.
+        
+        We know that the geodesic equation is:
+        (d^2 x^σ / dλ) Γ^σ _uv  (dx^u / dλ) (dx^u / dλ) = 0
+        For massive particles we can assume proper-time tau = path-parametre λ
+        
+        -We can simplify this expression to:
+        (dU^σ / dτ) =  Γ^σ _uv U^u U^v = 0
+        There is a lot of Γ^σ _uv connection coefficients to calculate, so equations get complicated exponentially.
+        but there is ONE set of solutions that is easy to verify.
+        (dU^σ / dτ) +  Γ^σ _uv U^u U^v = 0
+        (dU^σ / dτ) +  Γ^σ _tt U^t U^t = 0
+        (dU^σ / dτ) + Γ^σ _tt c^2 = 0
+        By the way,
+        U(τ) = c(et)
+        U^u(τ) = (c,0,0,0)
+        U^t(τ) = c, U^i(τ) = 0
+        
+        This is "at rest" with respect to coordinates lines.
+        The geodesic equation in weak gravity is a bit different from the one we derived, you can google it to find the formula.
+        
+        So this means that,
+        1/c^2 (dU^σ / dτ) = -(Γ^σ _tt)
+        the U derivative term goes to 0, so we get:
+        0 = 0
+        So this is a valid geodesic.
+        
+        
+        We can get that x ^u = (cτ + b^t, b^x, b^y, b^z)
+        Geodesic = a starting point, b^u, travelling forward in time at rate c
+        We can NOT trust our eyes to measure distances in relativity, the length L0 could be changing, but it would not be noticable to us
+        Instead we use things like basis-vectors and L0 to measure the distance.
+        Visualize a plane wave travelling only in the z-direction,
+        k^u = (w/c, 0, 0, w/c)
+        h_uv = [....]e^i(kσ x^σ)
+        Proper length L0 is changing, but it appears the same to our eyes.
+        L0 = ∫mag(d/dλ) dλ
+        We can calculate the proper length if we assume:
+        x(λ) =v^x λ
+        y(λ) = v^y λ
+        
+        We will start the derivation:
+         L0 = ∫sqrt(-d/dλ * d/dλ) dλ
+        L0 = ∫sqrt(-((dx/dλ ∂/∂x + (dy/dλ ∂/∂y) * (dx/dλ ∂/∂x + (dy/dλ ∂/∂y))) dλ
+        L0 = ∫(0,1) sqrt(- (v^x)^2 g_xx + (v^x)(v^y) g_xy + (v_y)^2 g_yy) dλ
+        L0 = ∫(0,1) sqrt(-vv) dλ
+        L0 = mag(v)
+        The Negative at the front makes the geodesic space-like
+        v is a displacement vector
+        
+        #v v = v^u v^v g_uv
+        It's also a spacelike vector, since
+        d/dλ = dx^u/dλ ∂/∂x^u
+        v = v^u (eu)
+        
+        So we get:
+        (v^x v^x g_xx) + (v^x v^y g_xy) + (v^y v^x g_yx) + (v^y v^y g_yy)
+        = (v^x)^2 gxx + 2(v^x v^y gxy) + (v^y)^2 gyy

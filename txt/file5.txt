@@ -1,0 +1,112 @@
+        From the previous lectures, we know that a Schwarzschild Geodesic is The path massive objects take near spherically symmetrical, electrically neutral, slowly rotating bodies
+        
+        We also know that 4-velocity U -> d/dτ => Timelike
+        And, 4-acceleration A -> d^2 / dτ^2 => Spacelike (|A|^2 < 0)
+        These live outside the light cone, the light cone being sqrt(-|A|^2) = a
+        d/dλ = 0, => Lightlike
+        
+        We can also recall the geodesic equation formula,
+        d^2 x^σ / dλ + Γ^σ <uv [(dx^u / dλ) (dx^v / dλ)] = 0
+        From Newtonian gravity in 8th grade, you might recall that
+        L = Rp = R m(dR/dt)
+        L = m((rer->) (r'er') + (ΦeΦ))
+        L = mr^2Φ
+        
+        so we get that Φ = L/mr^2
+        and R=rer,
+        dR/dt = r'er'
+        
+        In Newtonian Gravity, the formula for energy is
+        E = 1/2 mv^2, which we can expand to get
+        E = 1/2 m (dr/dt)^2 + m(- GM/r + L^2/2m^2 r^2)
+        
+        The underlined part is also Angular Momentum
+        We will take σ = ct, r, θ, Φ
+        and also, θ is consant and equal to π/2
+        aswell as dθ/dλ = 0
+        
+        We will now derive the constants of motion, and the radial equation
+        0-vec: d^2 ct/ dλ^2 + Γ^t <uv [(dx^u/dλ) (dx^v/dλ)] => Constant of Motion
+        0-vec: d^2 r/ dλ^2 + Γ^r <uv [(dx^u/dλ) (dx^v/dλ)] => Radial Equation
+        0-vec: d^2 θ/dλ = 0 (theta is constant)
+        0-vec: d^2 Φ/ dλ^2 + Γ^Φ <uv [(dx^u/dλ) (dx^v/dλ)] => Constant of Motion 
+        
+        We will know define some of the connection coefficients:
+        a) Γ^t <tr = Γ^t <rt =  1/2 (rs/r(rs-r))
+        0 = d^2 ct / dλ^2 = 2 (1/2) [(rs/r(rs-r)) dct/dλ dr/dλ]
+        
+        b) Γ^r <rr = 1/2 (rs/r(rs-r)),
+        Γ^r <θθ = rs-r,
+        Γ^r <ΦΦ = (rs-r)(sinθ)^2
+        we also have a 0 = d^2r/dλ^2 = 1/2 ... which is not important as we wont use it
+        
+        c)
+        0=0+0-sin(π/2)cos(π/2) (dΦ/dλ)^2, 0=0
+        Γ^θ <rθ = Γ^θ <θr = Γ^Φ < Φr = 1/r
+        Γ^θ <θΦ = sinθcosθ
+        
+        d)
+        Γ^Φ <θΦ = Γ^Φ <Φθ = cot θ
+        0 = d^2Φ/dλ^2 + 2 (1/r) dr/dλ dΦ/dλ
+        
+        Now, we can finally start.
+        L/m = 𝓛 = r^2 (dΦ/dλ)
+        ε = d(ct)/dλ * (1-rs/r)
+        These are both constants of motion
+        
+        ε=0=ε^2 - (dr/dλ)^2 - (1-rs/r) (𝓛/r^2 + ε)
+        
+        We will take=> 𝓛 = L/m, ε = E/m, λ=π, rs = 2MG/c^2
+        also, the 4-velocity vector U dotted with itself is equal to c^2
+        
+        We knoiw that E = 1/2 mr + mVeff(r)
+        rc = L^2 / m^2 GM 
+        GMr = L^2 / m^2
+        This is in Newtonian gravity, know we will move to general relativity
+        
+        in general relativity, ε = 1/2 (E^2 / m - mc^2)
+        we will take that ε~ = 1/2 m (dr/dτ)^2 + mVeff(r)
+        
+        =-GM/r + 𝓛^2 / 2r^2 - GM/c^2 𝓛^2/r^3 => M=1, m=1, G= >> 1
+        0 = GMr^2 - 𝓛^2 r + 3GM/c^2 𝓛^2
+        
+        we will have to use the quadratic equation here
+        rc = 𝓛^2 |sqrt(𝓛^4 - 12(GM/c)^2 𝓛^2) / 2GM| => this will give use 2 possible circular orbits which general relativity predicts, one unstable one, and one stable one.
+        
+        𝓛^2 + (...) is unstable
+        𝓛^2 - (...) is stable
+        
+        The 2 orbits "converge" when discrim = 0
+        0 = 𝓛^4 - 12)GM/c(^2 𝓛^2 =
+        𝓛^2 = 12(GM/c)^2
+        we will also take that r_isco (intermost stable circular orbit) =
+        => risco  = 12(GM/c)^2 |sqrt(0)| / 2GM
+        so we get that
+        risco = 6M (G/c^2) = 3rs
+        The circular orbit for light is
+        r = 3/2 rs (also known as the photon sphere on a non-rotating, uncharged, spherical mass)
+        Veff(r) = -GM/r +  L^2 / 2m^2 r^2 - [GM/c^2 * L^2/m^2r^3]
+        We will know talk abouit perihelion shift, and calculate mercury's perihelion shift. t he goal is to get r(fi)
+        
+        ε=c^2, λ=τ
+        ε^2 = (dr/dλ)^2 + ε - ε(rs/r) + 𝓛^2 / r^2 - rsa^2 / r^3
+        d^2 w / dΦ^2 + w =  1 + aw^2
+        
+        a = 3/2 * c^2 rs^2 / 𝓛^2
+        w = 1+a(1+1/2 e^2)+ e cos(Φ + aΦ sinΦ) - a(1/6) e^2 cos 2Φ ...
+        => cos([1-a]Φ)
+        cos(Φ)+ aΦ sin(Φ)
+        
+        a<<1, cos aΦ = 1, sin aΦ = aΦ
+        
+        Φ = 2π/1-a
+        => 2π + 2πa
+        Okay, so now onto the calculating of the perihelion shift of mercury
+        The M of the squn is approximately 1.99 * 10^30kg
+        
+        so we can calculate it's schwrazschild radius rs
+        rs = 2MG/c^2 = 2(1.99 * 10^30kg) (6.67*10^-11 Nm^2/kg^2) / (3x10^8)^2
+        => 2.95 * 10^3 m
+        
+        so we get that dΦ = 2πa * 2π (8*10^-8) rad/period
+        ==> 0.0002 rad/century
