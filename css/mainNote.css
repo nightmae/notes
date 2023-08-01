@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(16,16,16);
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    color: #e5e5e5;
+    overflow-x: hidden;
+    line-height: 1.6; /* Added for better readability */
+}
+
+#sidebar {
+    width: 300px; /* Increased sidebar width */
+    height: 250%; /* Set to viewport height */
+    background: linear-gradient(to right, rgb(25, 25, 25), rgb(36, 36, 36)); /* Gradient background */
+    padding: 30px; /* Increased padding */
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75); /* Added shadow */
+}
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Removed margin */
+}
+
+#sidebar ul ul {
+    padding-left: 20px; /* Increased indent */
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: #b0b0b0;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+#lower a {
+    font-size: 16px;
+    color: #bababa; /* Slightly lighter color for better contrast */
+}
+
+#sidebar a:hover {
+    color: #ffffff; /* Changed hover color to white for better contrast */
+}
+
+#main-content {
+    flex-grow: 1;
+    padding: 40px; /* Increased padding */
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75); /* Added shadow */
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+h2, p {
+    color: #ffffff; /* Pure white for better contrast */
+}
+
+h2 {
+    font-size: 48px; /* Increased heading size */
+    margin-bottom: 20px; /* Added margin for better spacing */
+}
+
+.main-content {
+    white-space: pre-wrap;
+}
+
+pre {
+    display: block;
+    font-family: 'Poppins';
+    margin: 1em 0px;
+    overflow: auto;
+    padding: 20px; /* Added padding */
+    background: #282828; /* Added background */
+    border-radius: 5px; /* Added border radius */
+    color: #fff; /* Changed text color to white */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    z-index:2;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+    border: 2px solid #F5F5F5;
+}
+
+.custom-scroll {
+    overflow-y: scroll;
+}
+img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75); 
+    transition: transform 0.3s ease-in-out; 
+    padding: 0;
+    margin:0;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+#hamburger {
+    margin:0;
+    padding:0;
+    cursor:pointer;
+}
