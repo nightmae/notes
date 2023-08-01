@@ -19,3 +19,15 @@ const spans = {
   spans.s1.addEventListener("click", function() {
     window.location.href = "GR.html"
 });
+  spans.s2.addEventListener("click", function() {
+    window.location.href = "GR.html"
+});
+  spans.s3.addEventListener("click", function() {
+    window.location.href = "GR.html"
+});
+  spans.s4.addEventListener("click", function() {
+    window.location.href = "GR.html"
+});
+  spans.s5.addEventListener("click", function() {
+    window.location.href = "GR.html"
+});
