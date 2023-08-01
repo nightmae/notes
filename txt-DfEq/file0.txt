@@ -1,0 +1,11 @@
+        Example:
+        cos(x) dy/dx + sin(x)y = 1
+        First divide by cos(x) so we can get 
+        dy/dx + tan(x)y = sec(x) * sec(x)
+        P(x) = tan x
+        u(x) = sec(x)
+        
+        => sec(x) dy/dx + sec(x)tan(x) = sec^2(x)
+        ∫d/dx (sec(x) * y) = ∫ sec^2 (x)
+        (sec(x) * y = tan(x) + C1) / sec(x)
+        y = sin(x) + C2

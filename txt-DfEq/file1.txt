@@ -1,0 +1,4 @@
+        First we take the partial derivative of with respect to y, and then with respect to x. We check if the equation's are exact to each other, and then if they are, we write this:
+        ∂/∂y M(x,y) = ∂/∂x (sec^2 y - x/y)
+        ∫∂/∂y (M)dy = ∫ - 1/y dy
+        M(x,y) = -ln|y| + g(x)

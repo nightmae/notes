@@ -1,0 +1,10 @@
+        ∂F/∂y (e^t y + te^t y) = e^t + te^t
+        ∂F/∂t (te^t + 2) = te^t + et * 1 
+        ∫∂F/∂y = ∫te^t + 2dy
+        ∂F/∂t (F) = te^t y + 2y + g(t)
+        ∂F/∂t = (y(t*e^t + e^t ) + g'(t)) == e^t y + te^t y
+        
+        ∫g'(t) = 0dt
+        g(t) = C
+        
+        F(t,y) = C

@@ -1,0 +1,8 @@
+Auxiliary equations with Complex roots
+a) Euler's Identity (first image)
+
+b) ay'' + by' + c = 0
+=> Auxiliary = ar^2 + br + c = 0
+Distinct roots (r1,r2) use: e^r1t, e^r2t
+Repeated r root, use: e^rt, te^rt
+Complex roots r=a |bi|, use r=a+bi

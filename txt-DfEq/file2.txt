@@ -1,0 +1,11 @@
+        Example:
+        (4x^3 + 6x^2 csc(y))dx + (x^4 cot(y))dy = 0 
+        My (∂M/∂y) = -6x^2 csc(y) cot(y)
+        Nx = 4x^3 cot(y)
+        
+        u(y) = e^∫ (Nx - My / M) dy
+        u(x) = e^∫ (My - Nx / N) dx
+        
+        u(y) = e^∫  cot(y) dy
+        u(y) = e^∫ ln |sin(y)|
+        u(y) = ln |sin(y)|
